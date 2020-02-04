@@ -43,10 +43,10 @@ To enable session clustering in your web application, EAP has to be configured (
     
 - In the log of the EAP pod, you can see 2 pods formed a cluster:
     ```
-    $ oc logs eap-app-1-7gbp8  | grep 'new cluster view'
-    03:56:06,162 INFO  [org.infinispan.CLUSTER] (thread-12,ee,eap-app-1-7gbp8) ISPN000094: Received new cluster view for channel ee: [eap-app-1-7gbp8|1] (2) [eap-app-1-7gbp8, eap-app-1-dbw4x]
-    03:56:06,168 INFO  [org.infinispan.CLUSTER] (thread-12,ee,eap-app-1-7gbp8) ISPN000094: Received new cluster view for channel ee: [eap-app-1-7gbp8|1] (2) [eap-app-1-7gbp8, eap-app-1-dbw4x]
-    03:56:06,170 INFO  [org.infinispan.CLUSTER] (thread-12,ee,eap-app-1-7gbp8) ISPN000094: Received new cluster view for channel ee: [eap-app-1-7gbp8|1] (2) [eap-app-1-7gbp8, eap-app-1-dbw4x]
+    $ oc logs eap-app-1-cnzgg  | grep 'new cluster view'
+    03:56:06,162 INFO  [org.infinispan.CLUSTER] (thread-12,ee,eap-app-1-cnzgg) ISPN000094: Received new cluster view for channel ee: [eap-app-1-cnzgg|1] (2) [eap-app-1-cnzgg, eap-app-1-mnwts]
+    03:56:06,168 INFO  [org.infinispan.CLUSTER] (thread-12,ee,eap-app-1-cnzgg) ISPN000094: Received new cluster view for channel ee: [eap-app-1-cnzgg|1] (2) [eap-app-1-cnzgg, eap-app-1-mnwts]
+    03:56:06,170 INFO  [org.infinispan.CLUSTER] (thread-12,ee,eap-app-1-cnzgg) ISPN000094: Received new cluster view for channel ee: [eap-app-1-cnzgg|1] (2) [eap-app-1-cnzgg, eap-app-1-mnwts]
     
 - Browse to the counter application through a route which have been created already:
     ```

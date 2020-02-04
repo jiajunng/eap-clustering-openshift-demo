@@ -55,12 +55,16 @@ To enable session clustering in your web application, EAP has to be configured (
     eap-app   eap-app-eap-clustering-demo.apps.cluster-753a.sandbox311.opentlc.com          eap-app    <all>   edge/Redirect   None
   
 - The web application displays the following information: 
-  IMAGE
+
+  ![Image of web application](https://user-images.githubusercontent.com/25560159/73716504-1eed9b00-4752-11ea-93d5-54e15c554bbb.png)
+  
   - Session ID
   - Session ```counter``` and ```timestamp``` (Variables stored in the session)
   - The container name that the web page and session is being hosted from
 
-- Click on the Increment Counter button
+- Click on the Increment Counter button:
+
+![Image of web application](https://user-images.githubusercontent.com/25560159/73716641-8c013080-4752-11ea-8716-d65f27563f5f.png)
 
 - To test that the session is being replicated, kill the running container:
    ```
@@ -70,6 +74,7 @@ To enable session clustering in your web application, EAP has to be configured (
    eap-app-1-cnzgg    1/1     Running     0          4m46s
    eap-app-1-deploy   0/1     Completed   0          4m55s
    eap-app-1-mnwts    1/1     Running     0          3m55s
+   
    $ oc delete pod eap-app-1-cnzgg
    pod "eap-app-1-cnzgg" deleted
 

@@ -57,7 +57,6 @@ To enable session clustering in your web application, EAP has to be configured (
 - The web application displays the following information: 
 
   ![Image of web application](https://user-images.githubusercontent.com/25560159/73716504-1eed9b00-4752-11ea-93d5-54e15c554bbb.png)
-  
   - Session ID
   - Session ```counter``` and ```timestamp``` (Variables stored in the session)
   - The container name that the web page and session is being hosted from
@@ -65,7 +64,6 @@ To enable session clustering in your web application, EAP has to be configured (
 - Click on the Increment Counter button:
 
 ![Image of web application](https://user-images.githubusercontent.com/25560159/73716641-8c013080-4752-11ea-8716-d65f27563f5f.png)
-
 - To test that the session is being replicated, kill the running container:
    ```
    $ oc get pods
